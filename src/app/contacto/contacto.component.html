@@ -1,0 +1,43 @@
+<h2 class="mt-5">Sobre nosotros</h2>
+<div class="row d-flex justify-content-center col-8 mt-5">
+    <div  class="col-3">
+        <form #formContacto="ngForm" (ngSubmit)="onSubmit(formContacto)">
+            <div class="">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre" required>
+                <span class="text-danger" *ngIf="nombre.touched && !nombre.valid">
+                    Campo obligatorio
+                </span><br>
+            </div>
+            <div class="">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" name="apellido" #apellido="ngModel" [(ngModel)]="usuario.apellido" required>
+                <span class="text-danger" *ngIf="apellido.touched && !apellido.valid">
+                    Campo obligatorio
+                </span><br>
+            </div>
+            <div class="">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" #email="ngModel" [(ngModel)]="usuario.email" required>
+                <span class="text-danger" *ngIf="email.touched && !email.valid">
+                    Campo obligatorio
+                </span><br>
+            </div>
+            <div class="">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" name="mensaje" #mensaje="ngModel" [(ngModel)]="usuario.mensaje" required></textarea>
+                <span class="text-danger" *ngIf="email.touched && !email.valid">
+                    Campo obligatorio
+                </span><br>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit" value="Enviar" [disabled]="!formContacto.form.valid">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+    
+

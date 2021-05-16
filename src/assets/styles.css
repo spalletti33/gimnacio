@@ -1,0 +1,75 @@
+.cuerpo{
+    background: #293c77;
+    color: white;
+}
+
+header{
+    background: black; 
+}
+
+header a:hover,.active{
+    background: rgb(182, 195, 219);
+}
+
+.principal a{
+    color: white;
+    text-decoration: none;
+}
+
+.principal ul .dropdown-item{
+    color: black;
+    cursor: pointer;
+}
+
+.carousel-inner {
+    height: 50vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+  }
+  
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .card-img-top {
+    height: 60% !important;
+    /*   width: 100%;
+   object-fit: cover;  */
+  }
+
+  .embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+.card {
+    height: 50vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;   
+  }
+
+  /*-------------------------Estilos Footer-------------------------*/
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;    
+}
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
